@@ -18,7 +18,7 @@ END {
 
 =head1 NAME
 
-Timer::Runtime
+Timer::Runtime - Prints program name and runtime to STDOUT
 
 =head1 VERSION
 
@@ -33,8 +33,8 @@ our $VERSION = '0.01';
 
 Timer::Runtime wraps a program with START and END blocks used to get the
 start/stop times and caculate the runtime duration.  This information is printed
-to STDOUT.  Note that if the program exists using 'exec', then the stop time
-won't be seen due to the END block in Timer::Runtime not being called.
+to STDOUT.  Note that if the program exists using 'exec' or it dies, then the
+stop time won't be seen due to the END block in Timer::Runtime not being called.
 
     use Timer::Runtime;
 
