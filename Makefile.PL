@@ -13,6 +13,10 @@ WriteMakefile(
       : ()),
     PL_FILES            => {},
     PREREQ_PM => {
+        'Time::Local'  => 0,
+        'Time::Elapse' => 0,
+    },
+    BUILD_REQUIRES => {
         'Test::More'   => 0,
         'Time::Local'  => 0,
         'Time::Elapse' => 0,
